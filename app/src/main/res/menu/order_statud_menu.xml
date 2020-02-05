@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Cancelled"
+        android:id="@+id/menu_canceled"
+        />
+
+    <item
+        android:title="Placed"
+        android:id="@+id/menu_Placed"
+        />
+    <item
+        android:title="Processed"
+        android:id="@+id/menu_Processed"
+        />
+    <item
+        android:title="Shipping"
+        android:id="@+id/menu_Shipping"
+        />
+    <item
+        android:title="Shipped"
+        android:id="@+id/menu_Shipped"
+        />
+
+
+</menu>

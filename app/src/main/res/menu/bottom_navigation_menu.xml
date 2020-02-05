@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/new_status"
+        android:icon="@drawable/ic_keyboard_arrow_up"
+        android:title="New"
+        app:showAsAction="ifRoom"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/cancel_status"
+        android:icon="@drawable/ic_keyboard_arrow_up"
+        android:title="canceled"
+        app:showAsAction="ifRoom"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/processing_status"
+        android:icon="@drawable/ic_keyboard_arrow_up"
+        android:title="processing"
+        app:showAsAction="ifRoom"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/shipping_status"
+        android:icon="@drawable/ic_keyboard_arrow_up"
+        android:title="shipping"
+        app:showAsAction="ifRoom"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/shipped_status"
+        android:icon="@drawable/ic_keyboard_arrow_up"
+        android:title="shipped"
+        app:showAsAction="ifRoom"
+        android:enabled="true"/>
+
+</menu>

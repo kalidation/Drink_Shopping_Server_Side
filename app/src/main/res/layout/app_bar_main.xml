@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:elevation="10dp"
+        app:elevation="10dp"
+        android:id="@+id/open_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="22dp"
+        android:layout_marginRight="16dp"
+        app:srcCompat="@drawable/ic_more_vert_black_24dp"
+        app:backgroundTint="@color/colorcardbackground"
+        app:fabSize="normal"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="90dp"
+        app:srcCompat="@drawable/ic_add"
+        app:backgroundTint="@color/colorcardbackground"
+        app:fabSize="mini"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/delete_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="85dp"
+        android:layout_marginBottom="31dp"
+        app:srcCompat="@drawable/ic_update"
+        app:backgroundTint="@color/colorcardbackground"
+        app:fabSize="mini"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/update_category_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="142dp"
+        android:layout_marginBottom="14dp"
+        app:srcCompat="@drawable/ic_update"
+        app:backgroundTint="@color/colorcardbackground"
+        app:fabSize="mini"
+        app:fab_label="Image"/>
+
+    <TextView
+        android:text="Cancel"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:id="@+id/text_image"
+        android:elevation="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="200dp"
+        android:layout_marginBottom="20dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/update_category_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="110dp"
+        android:layout_marginBottom="85dp"
+        app:srcCompat="@drawable/ic_update"
+        app:backgroundTint="@color/colorcardbackground"
+        app:fabSize="mini"/>
+
+    <TextView
+        android:text="Delete Items"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:id="@+id/text_Name"
+        android:elevation="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="160dp"
+        android:layout_marginBottom="93dp"/>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
